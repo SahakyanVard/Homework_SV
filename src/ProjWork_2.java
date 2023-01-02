@@ -24,6 +24,10 @@ public class ProjWork_2 {
         int sum = (int) (m1 + m2);
         System.out.println(sum);
 
+        // Third issue /double in decimal/
+        double d1 = 88.777;
+        System.out.println((float)(d1-(int)d1));
+
 
 
     }
