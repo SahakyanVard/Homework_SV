@@ -7,7 +7,7 @@ public class ForArray {
             if (array[i] > array[i - 1]) {
                 quantity++;
             }
-        }
+            }
         System.out.println("Is greater than the previous one: " + quantity);
     }
 }

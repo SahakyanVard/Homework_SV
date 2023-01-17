@@ -17,6 +17,6 @@ public class DifferentLengthsArrays {
         for (int i = 0; i < twoDDL[index].length; i++) {
             System.out.print(twoDDL[index][i] + ",");
         }
+        }
     }
-}
 
