@@ -1,5 +1,7 @@
 package project_2;
+
 import java.util.Scanner;
+
 public class OOP_1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -22,8 +24,11 @@ public class OOP_1 {
         } else if (a > 10 || b > 10 || a < -10 || b < -10) {
             return -1;
         }
-        if (b != 0) {
-            power = a * (powerF(a, (b - 1)));
+        if (b > 0) {
+            power = a * (powerF(a, b - 1));
+            return power;
+        } else if (b < 0) {
+            power = 1/(a * (powerF(a, -(b + 1))));
             return power;
         } else
             return 1;
