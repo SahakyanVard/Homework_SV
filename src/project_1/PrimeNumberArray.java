@@ -2,7 +2,7 @@ package project_1;
 
 public class PrimeNumberArray {
     public static void main(String[] args) {
-        int[] arr = {6, 2, 3, 34, 5, 7};
+        int[] arr = {10,12,20,55,77};
         byte count = 0;
         for (int i = 0; i < arr.length; i++) {
             boolean isPrime = true;
