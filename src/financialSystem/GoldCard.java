@@ -6,9 +6,9 @@ public class GoldCard extends BankCard {
         return lunchFixe;
     }
 
-    public int cashoutBonus(int bonus, int cashout){
-        if (cashout==1) {
-            bonus+=2;
+    public int cashoutBonus(int bonus, int cashout) {
+        if (cashout > 0) {
+            bonus += 2;
         }
         return bonus;
     }
