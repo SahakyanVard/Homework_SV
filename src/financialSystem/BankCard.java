@@ -69,6 +69,16 @@ public class BankCard {
         this.cardExpiryDate = cardExpiryDate;
     }
 
+//    public String cardExpiryDay(int mount, int year) {
+//        if ((mount > 0 || mount < 13) && (year > 2023 || year < 2030)) {
+//            cardExpiryDate = String.valueOf(mount) + "/" + String.valueOf(year);
+//        } else {
+//            System.out.println("It's not correct data for card");
+//        }
+//        return cardExpiryDate;
+//    }
+
+// BankCard system test.
     public static void main(String[] args) {
         BusinessCard bc = new BusinessCard();
         StandardCard sc = new StandardCard();
@@ -85,6 +95,7 @@ public class BankCard {
         gc.setCardUser("VARD SEDRAKYAN");
         bc.setCardExpiryDate("01/2028");
         gc.setCardExpiryDate("01/2030");
+//        bc.cardExpiryDay(15,2031);
 //        gc.cardSHows();
         bc.cardSHows();
         sc.cardSHows();
