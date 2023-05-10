@@ -84,11 +84,10 @@ public class BankCard {
         bc.setCardUser("VARDANUSH SAHAKYAN");
         gc.setCardUser("VARD SEDRAKYAN");
         bc.setCardExpiryDate("01/2028");
-        gc.setCardUser("01/2030");
-        sc.cardSHows();
+        gc.setCardExpiryDate("01/2030");
+//        gc.cardSHows();
         bc.cardSHows();
-        gc.cardSHows();
-
+        sc.cardSHows();
     }
 }
 
