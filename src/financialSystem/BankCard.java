@@ -43,6 +43,15 @@ public class BankCard {
 
     public void setCardUser(String cardUser) {
         this.cardUser = cardUser;
+        int count = 0;
+        for (int i = 0; i < cardUser.length(); i++) {
+            if (Character.isUpperCase(cardUser.charAt(i))) {
+                count++;
+            }
+        }
+        if (count == cardUser.length() - 1) {
+        } else
+            System.out.println("Invalid input data." + "\n All letters of carduser must be uppercase");
     }
 
     public long getCardNumber() {
@@ -51,6 +60,8 @@ public class BankCard {
 
     public void setCardNumber(long cardNumber) {
         this.cardNumber = cardNumber;
+        if (cardNumber > 0 && cardNumber <= 9999999999999999l) {
+        } else System.out.println("The card number is not correct");
     }
 
     public int getCvv() {
@@ -66,19 +77,10 @@ public class BankCard {
     }
 
     public void setCardExpiryDate(String cardExpiryDate) {
-        this.cardExpiryDate = cardExpiryDate;
+        this.cardExpiryDate = String.valueOf(cardExpiryDate);
     }
 
-//    public String cardExpiryDay(int mount, int year) {
-//        if ((mount > 0 || mount < 13) && (year > 2023 || year < 2030)) {
-//            cardExpiryDate = String.valueOf(mount) + "/" + String.valueOf(year);
-//        } else {
-//            System.out.println("It's not correct data for card");
-//        }
-//        return cardExpiryDate;
-//    }
-
-// BankCard system test.
+    // BankCard system test.
     public static void main(String[] args) {
         BusinessCard bc = new BusinessCard();
         StandardCard sc = new StandardCard();
@@ -89,14 +91,13 @@ public class BankCard {
 //        bc.onlineShopping();
 //        sc.onlineShopping();
 //        gc.onlineShopping();
-        bc.setCardNumber(433555120001l);
-        gc.setCardNumber(101100005522l);
-        bc.setCardUser("VARDANUSH SAHAKYAN");
-        gc.setCardUser("VARD SEDRAKYAN");
+        bc.setCardNumber(4355121512127898l);
+//        gc.setCardNumber(1010111122121313l);
+        bc.setCardUser("ARAM ARAMYAN");
+//        gc.setCardUser("VARD SEDRAKYAN");
         bc.setCardExpiryDate("01/2028");
-        gc.setCardExpiryDate("01/2030");
-//        bc.cardExpiryDay(15,2031);
-//        gc.cardSHows();
+        gc.setCardExpiryDate("05/2030");
+//      gc.cardSHows();
         bc.cardSHows();
         sc.cardSHows();
     }
