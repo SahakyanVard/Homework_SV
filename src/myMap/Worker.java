@@ -1,4 +1,4 @@
-package collections;
+package myMap;
 
 public class Worker
 //implements Comparable<Worker>
