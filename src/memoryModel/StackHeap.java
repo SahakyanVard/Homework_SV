@@ -6,7 +6,7 @@ public class StackHeap {
     public static void main(String[] args) {
 
         // Check for balanced brackets in an expression:{}()[]
-        
+
         String string="({aaa}(45){[ ]})";
         System.out.println(isCorrect(string));
     }
