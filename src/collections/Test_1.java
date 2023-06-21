@@ -72,29 +72,29 @@ public class Test_1 {
 //        Collections.sort(ll1, Collections.reverseOrder());
 //        System.out.println(ll1);
 
-        List<Worker> workers = new ArrayList<>();
-        workers.add(new Worker("Bni", "Arzumanyan", 20));
-        workers.add(new Worker("Gor", "Gasparyan", 22));
-        workers.add(new Worker("Dohar", "Ordyan", 18));
+//        List<Worker> workers = new ArrayList<>();
+//        workers.add(new Worker("Bni", "Arzumanyan", 20));
+//        workers.add(new Worker("Gor", "Gasparyan", 22));
+//        workers.add(new Worker("Dohar", "Ordyan", 18));
 //        System.out.println(workers);
 //        Collections.sort(workers);
 //        System.out.println(workers);
 //        Collections.sort(workers,Collections.reverseOrder());
 //        System.out.println(workers);
-
-        Collections.sort(workers,new AgeComparator().reversed());
-        System.out.println(workers);
-        Collections.sort(workers,new SurnameComparator());
-        System.out.println(workers);
-
-        //եթե 1 անգամ ենք ըստ անունի ուզում սորթ անեքօ ՝օգտագործում ենք անանիմուս կլասս
-        Collections.sort(workers, new Comparator<Worker>() {
-            @Override
-            public int compare(Worker o1, Worker o2) {
-                return o1.getName().compareTo(o2.getName());
-            }
-        });
-        System.out.println(workers);
+//
+//        Collections.sort(workers,new AgeComparator().reversed());
+//        System.out.println(workers);
+//        Collections.sort(workers,new SurnameComparator());
+//        System.out.println(workers);
+//
+//        //եթե 1 անգամ ենք ըստ անունի ուզում սորթ անեքօ ՝օգտագործում ենք անանիմուս կլասս
+//        Collections.sort(workers, new Comparator<Worker>() {
+//            @Override
+//            public int compare(Worker o1, Worker o2) {
+//                return o1.getName().compareTo(o2.getName());
+//            }
+//        });
+//        System.out.println(workers);
 
 
     }

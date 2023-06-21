@@ -43,17 +43,36 @@ public class Test_2 {
 //        System.out.println(workerTreeSet);
 
         //LinkedHashSet:Կդասավորի հանելով դուբլիկատները այնպես ինչ հերթով որ մուտք ենք արել
-        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet(Arrays.asList(1, 0, 0, 1, 5, 8));
-        System.out.println(linkedHashSet);
+//        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet(Arrays.asList(1, 0, 0, 1, 5, 8));
+//        System.out.println(linkedHashSet);
+//
+//        String n = "I am Armenian 2023 I 2023";
+//        String[] n1 = n.split(" ");
+//        LinkedHashSet<String> linkedHashSet1 = new LinkedHashSet<>(Arrays.asList(n1));
+//        System.out.println(linkedHashSet1);
+//        for (String x:linkedHashSet1) {
+//            System.out.print(x+" ");
+//        }
+        navigate(MyEnum.EAST);
+        navigate(MyEnum.NORTH);
+        navigate(MyEnum.WEST);
+        navigate(MyEnum.SOUTH);
+    }
 
-        String n = "I am Armenian 2023 I 2023";
-        String[] n1 = n.split(" ");
-        LinkedHashSet<String> linkedHashSet1 = new LinkedHashSet<>(Arrays.asList(n1));
-        System.out.println(linkedHashSet1);
-        for (String x:linkedHashSet1) {
-            System.out.print(x+" ");
+    static void navigate(MyEnum compass) {
+        switch (compass) {
+            case EAST:
+                System.out.println("Go to the East -"+MyEnum.EAST.value);
+                break;
+            case WEST:
+                System.out.println("Go to the West -"+MyEnum.WEST.value);
+                break;
+            case NORTH:
+                System.out.println("Go to the North -"+MyEnum.NORTH.value);
+                break;
+            case SOUTH:
+                System.out.println("Go to the South -"+MyEnum.SOUTH.value);
+                break;
         }
-
-
     }
 }
